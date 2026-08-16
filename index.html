@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Herbalife Independent Distributor | Wellness & Nutrition</title>
+
+  <meta name="description" content="Herbalife Independent Distributor से wellness, nutrition और fitness guidance के लिए संपर्क करें।">
+  <meta name="theme-color" content="#78be20">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans Devanagari", sans-serif;
+      line-height: 1.6;
+      background: #f7faf5;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #65a91b, #8bcf35);
+      color: white;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(40,90,10,.65), rgba(40,90,10,.65)),
+                  url("https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1400&q=80");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 85px 20px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #25d366;
+      color: white;
+      padding: 13px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .btn.call {
+      background: #1769aa;
+    }
+
+    section {
+      padding: 55px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+      color: #4d8d14;
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 35px;
+      color: #666;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 18px rgba(0,0,0,.08);
+    }
+
+    .icon {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      color: #4d8d14;
+      margin-bottom: 8px;
+    }
+
+    .about {
+      background: white;
+    }
+
+    .about-box {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .step {
+      background: white;
+      border-radius: 15px;
+      padding: 25px 15px;
+      text-align: center;
+      box-shadow: 0 3px 15px rgba(0,0,0,.07);
+    }
+
+    .number {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: #78be20;
+      color: white;
+      margin: 0 auto 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .contact {
+      background: #edf7e5;
+      text-align: center;
+    }
+
+    .contact-box {
+      background: white;
+      max-width: 650px;
+      margin: auto;
+      padding: 35px 20px;
+      border-radius: 18px;
+      box-shadow: 0 4px 18px rgba(0,0,0,.08);
+    }
+
+    .phone {
+      font-size: 28px;
+      color: #4d8d14;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .disclaimer {
+      background: #fff8e6;
+      padding: 20px;
+      font-size: 13px;
+      color: #555;
+      text-align: center;
+    }
+
+    footer {
+      background: #222;
+      color: #ddd;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    @media (max-width: 800px) {
+      nav {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .cards,
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 40px 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">Herbalife Wellness</div>
+
+    <nav>
+      <a href="#home">होम</a>
+      <a href="#services">सेवाएँ</a>
+      <a href="#about">हमारे बारे में</a>
+      <a href="#contact">संपर्क</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <h1>स्वस्थ जीवन की ओर एक कदम</h1>
+
+  <p>
+    Herbalife Independent Distributor के साथ
+    Nutrition, Wellness और Fitness के लिए व्यक्तिगत मार्गदर्शन प्राप्त करें।
+  </p>
+
+  <a class="btn" href="https://wa.me/919079847427?text=Namaste%2C%20mujhe%20Herbalife%20ke%20baare%20mein%20jaankari%20chahiye.">
+    WhatsApp पर संपर्क करें
+  </a>
+
+  <a class="btn call" href="tel:+919079847427">
+    📞 अभी कॉल करें
+  </a>
+</section>
+
+<section id="services">
+  <div class="container">
+
+    <h2 class="title">हमारी सेवाएँ</h2>
+
+    <p class="subtitle">
+      आपकी wellness journey के लिए व्यक्तिगत guidance और support।
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">🥗</div>
+        <h3>Nutrition Guidance</h3>
+        <p>
+          आपकी जरूरत और lifestyle के अनुसार nutrition से जुड़ी सामान्य जानकारी।
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💪</div>
+        <h3>Fitness Support</h3>
+        <p>
+          स्वस्थ lifestyle और fitness routine को बेहतर बनाने के लिए guidance।
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌿</div>
+        <h3>Wellness Support</h3>
+        <p>
+          आपके wellness goals के लिए लगातार motivation और personal support।
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+
+    <h2 class="title">हमारे बारे में</h2>
+
+    <div class="about-box">
+
+      <p>
+        नमस्ते! मैं
+        <strong>[आपका नाम]</strong>,
+        Herbalife Independent Distributor हूँ।
+      </p>
+
+      <br>
+
+      <p>
+        मेरा उद्देश्य लोगों को बेहतर nutrition, wellness और
+        healthy lifestyle के बारे में जानकारी और व्यक्तिगत support देना है।
+      </p>
+
+      <br>
+
+      <p>
+        आपकी जरूरतों को समझकर उचित जानकारी और guidance के लिए
+        आप मुझसे सीधे संपर्क कर सकते हैं।
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2 class="title">कैसे शुरुआत करें?</h2>
+
+    <p class="subtitle">
+      अपनी wellness journey शुरू करने के लिए आसान steps।
+    </p>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="number">1</div>
+        <h3>संपर्क करें</h3>
+        <p>WhatsApp या फोन से संपर्क करें।</p>
+      </div>
+
+      <div class="step">
+        <div class="number">2</div>
+        <h3>अपना Goal बताएं</h3>
+        <p>अपनी wellness और lifestyle जरूरतों के बारे में बताएं।</p>
+      </div>
+
+      <div class="step">
+        <div class="number">3</div>
+        <h3>Guidance लें</h3>
+        <p>आपके goals के अनुसार सामान्य wellness guidance प्राप्त करें।</p>
+      </div>
+
+      <div class="step">
+        <div class="number">4</div>
+        <h3>Journey शुरू करें</h3>
+        <p>लगातार support और motivation के साथ आगे बढ़ें।</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <h2 class="title">संपर्क करें</h2>
+
+    <div class="contact-box">
+
+      <h3>Herbalife Independent Distributor</h3>
+
+      <p><strong>नाम:</strong> [आपका नाम]</p>
+
+      <p><strong>शहर/पता:</strong> [आपका शहर और पता]</p>
+
+      <div class="phone">
+        📱 9079847427
+      </div>
+
+      <a class="btn"
+         href="https://wa.me/919079847427?text=Namaste%2C%20mujhe%20Herbalife%20ke%20baare%20mein%20jaankari%20chahiye.">
+        WhatsApp करें
+      </a>
+
+      <a class="btn call" href="tel:+919079847427">
+        📞 Call करें
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<div class="disclaimer">
+
+  <strong>महत्वपूर्ण सूचना:</strong><br>
+
+  यह वेबसाइट एक स्वतंत्र Herbalife Distributor द्वारा संचालित
+  व्यक्तिगत वेबसाइट है और Herbalife की आधिकारिक वेबसाइट नहीं है।
+
+  <br><br>
+
+  Herbalife उत्पाद किसी बीमारी का diagnosis, treatment, prevention
+  या cure करने के लिए intended नहीं हैं। किसी भी physical activity
+  से पहले अपने physician से सलाह लें और उत्पाद के label की जानकारी पढ़ें।
+
+</div>
+
+<footer>
+
+  <p>
+    © 2026 <strong>[आपका नाम]</strong> —
+    Herbalife Independent Distributor
+  </p>
+
+  <p>
+    📞 9079847427
+  </p>
+
+  <p style="margin-top:10px;">
+    यह स्वतंत्र Distributor वेबसाइट है।
+  </p>
+
+</footer>
+
+</body>
+</html>
